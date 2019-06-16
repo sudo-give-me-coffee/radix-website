@@ -1,0 +1,11 @@
+--2019-06-16 05:11:06--  https://raichu-uploads.s3.amazonaws.com/company_58bef1c4-45b5-4f13-997f-1127f36fa795.jpg
+Resolvendo raichu-uploads.s3.amazonaws.com (raichu-uploads.s3.amazonaws.com)... 52.216.86.75
+Conectando-se a raichu-uploads.s3.amazonaws.com (raichu-uploads.s3.amazonaws.com)|52.216.86.75|:443... conectado.
+A requisição HTTP foi enviada, aguardando resposta... 200 OK
+Tamanho: 5966 (5,8K) [application/octet-stream]
+Salvando em: “company_58bef1c4-45b5-4f13-997f-1127f36fa795.jpg”
+
+     0K .....                                                 100%  280M=0s
+
+2019-06-16 05:11:07 (280 MB/s) - “company_58bef1c4-45b5-4f13-997f-1127f36fa795.jpg” salvo [5966/5966]
+
