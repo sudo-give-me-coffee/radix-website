@@ -4,8 +4,10 @@
 /* Links */
 a,
 a:focus,
-a:hover {
+a:hover,
+a:visited {
   color: #fff;
+  outline: none;
 }
 
 /* Custom default button */
