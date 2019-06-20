@@ -11,6 +11,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="styles/main.css" rel="stylesheet">
+  <link href="css/modal-image.css" rel="stylesheet">
 </head>
 
 <body id="top">
@@ -24,7 +25,7 @@
               <a class="nav-link nav-social" href="https://github.com/rauldipeas/RaDiX" target="_blank"><i class="fab fa-github-alt" aria-hidden="true" title="GitHub"></i></a>
               <a class="nav-link nav-social" href="https://docs.radix.ws" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true" title="Documentação"></i></a>
               <a class="nav-link nav-social" href="https://quire.io/w/RaDiX" target="_blank"><i class="fa fa-users" aria-hidden="true" title="Quadro de feedback"></i></a>
-              <a class="nav-link nav-social" href="https://youtube.com/RaulDipeas-Cypher" target="_blank"><i class="fab fa-youtube" aria-hidden="true" title="YouTube"></i></a>
+              <a class="nav-link nav-social" href="https://youtube.com/RaulDipeas-Cypher" target="_blank"><i class="fab fa-youtube" aria-hidden="true" title="YouTube" style="color: #ff1313"></i></a>
               <!--<a class="nav-link nav-social" href="https://blog.rauldipeas.tk" target="_blank"><i class="fa fa-blog" aria-hidden="true" title="Blog"></i></a>-->
               <a class="nav-link nav-social" href="sign"><i class="fa fa-dollar-sign" aria-hidden="true" title="Doações"></i></a>
             </nav>
@@ -32,17 +33,32 @@
         </div><br>
         <div class="inner cover">
           <h1 class="cover-heading" style="margin-bottom: 20px">RaDiX</h1>
-          <a href="https://imgur.com/a/63lHGhv" target="_blank" title="Clique para mais imagens"><img src="images/principal.png" width="70%"></a>
+          <!-- Trigger the Modal -->
+          <img id="myImg" class="shadow" src="images/principal-modal.png" alt="Clique aqui para mais imagens..." style="width:70%">
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+           <!-- The Close Button -->
+           <span class="close">&times;</span>
+
+           <!-- Modal Content (The Image) -->
+           <img class="modal-content" id="img01">
+
+           <!-- Modal Caption (Image Text) -->
+           <a href="https://imgur.com/a/63lHGhv" target="_blank" style="text-decoration: none"><div id="caption"></div></a>
+          </div>
           <br>
           <p>
-            <h2>Viva mais, configure menos!</h2>
+            <h2 class="h2-shadow">Viva mais, configure menos!</h2>
           </p><br>
-          <a href="https://github.com/rauldipeas/RaDiX/releases" class="btn btn-lg" style="color: #fff; background-color: #000; margin-bottom: 30px" target="_blank">Baixar no <strong>GitHub</strong></a>
+          <a href="https://github.com/rauldipeas/RaDiX/releases" class="btn btn-lg shadow" style="color: #fff; background-color: #000; margin-bottom: 30px" target="_blank">Baixar no <strong>GitHub</strong></a>
         </div>
       </div>
     </div>
   </div>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script src="js/modal-image.js"></script>
   <!-- Gitter Sidecar -->
   <!--<script>
       ((window.gitter = {}).chat = {}).options = {
@@ -52,7 +68,7 @@
     </script>
     <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>-->
   <div class="float">
-    <a href="https://gitter.im/radix-community/support" target="_blank"><img src="images/gitter.png" class="" width="100%" style="border-radius: 30px 30px 30px 30px;" title="Chat de suporte no Gitter"> </a>
+    <a href="https://gitter.im/radix-community/support" target="_blank"><img src="images/gitter.png" class="shadow" width="100%" style="border-radius: 30px 30px 30px 30px;" title="Chat de suporte no Gitter"> </a>
   </div>
 </body>
 
