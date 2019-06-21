@@ -24,7 +24,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
 // Handle ESC key (key code 27)
 document.addEventListener('keyup', function(e) {
     if (e.keyCode == 27) {
