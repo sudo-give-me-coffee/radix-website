@@ -50,7 +50,7 @@
           </div>
           <br>
           <p>
-            <h2 class="drop-shadow">Viva mais, configure menos!</h2>
+            <h2 class="drop-shadow">Viva mais, configure menos! | <div id="counter"/></h2>
             <a href="//www.youtube.com/watch?v=xUNIi9usZZA" data-lity><strong class="drop-shadow"><img src="images/diolinux.png" width="24px"> Diolinux <i class="fab fa-youtube" style="color: red"></i></strong></a> &nbsp;&bull;&nbsp;
             <a href="//www.youtube.com/watch?v=KAlKQPu0E-s" data-lity><strong class="drop-shadow"><img src="images/certificações-net.br.jpeg" width="24px" style="border-radius: 10px"> Certificações NET.BR <i class="fab fa-youtube" style="color: red"></i></strong></a> &nbsp;&bull;&nbsp;
             <a href="//www.youtube.com/watch?v=A4DwYmOFaEo" data-lity><strong class="drop-shadow"><img src="images/tocadotux.jpeg" width="24px" style="border-radius: 10px"> Toca do Tux <i class="fab fa-youtube" style="color: red"></i></strong></a>
@@ -79,6 +79,17 @@
   <div class="float">
     <a href="https://gitter.im/radix-community/support" target="_blank"><img src="images/gitter.png" class="shadow gitter-button" width="100%" style="border-radius: 30px 30px 30px 30px;" title="Chat de suporte no Gitter"> </a>
   </div>
+  <script>
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+      if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+        const elemento = document.getElementById("counter");
+        elemento.innerHTML = xmlHttp.responseText;
+      }
+    }
+    xmlHttp.open("GET", "https://raw.githubusercontent.com/rauldipeas/radix-website/master/website/download-counter/download-counter.log", false);
+    xmlHttp.send(null);
+  </script>
 </body>
 
 </html>
